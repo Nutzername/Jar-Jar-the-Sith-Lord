@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+    <title>JAR JAR THE SITHLORD</title>
+
+    <link href="css/game.css" rel="stylesheet" type="text/css">
+    <link href="css/pad-controls.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div id="game-container">
+    <canvas id="game">
+        Guru meditation: No &lt;canvas&gt; element supported!
+    </canvas>
+
+    <div id="game-menu" class="game-info">
+
+        <div class="menu-item menu-text" id="intro">
+            <h2>JAR JAR THE SITHLORD</h2>
+        </div>
+
+        <div class="menu-item menu-link" id="button-play3">
+            STEAL MONEY FROM THE PALACE OF NABOO TO FINANCE THE DEATHSTAR OF YOUR FRIEND SIDIOUS (DO NOT GET CATCHED BY THE GUARDS)
+        </div>
+        <div class="menu-item menu-link" id="button-play4">
+            FIND AND KILL A JEDI WHO SURVIVED THE ORDER 66 AND HIDES HISSELF ON THE PLANET KASHYYYK
+        </div>
+
+        <div class="menu-item menu-text" id="help">
+            <p>Please use your arrow keys or pad controls to play.</p>
+        </div>
+
+    </div>
+
+    <div id="game-over" class="game-info">
+        <div class="menu-item menu-link" id="button-restart">
+            Play again
+        </div>
+        <div class="menu-item menu-link" id="button-menu">
+            Back to main menu
+        </div>
+    </div>
+
+
+    <div id="pad-controls">
+        <div class="controls-wrapper controls-left">
+            <ul>
+                <li class="cross" id="control-up"></li>
+            </ul>
+        </div>
+        <div class="controls-wrapper controls-right">
+            <ul>
+                <li id="control-left"></li>
+                <li id="control-right"></li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- don't forget the charset here, else the levels will be parsed incorrectly -->
+<script type="text/javascript" src="js/menu.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/levels.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/level_methods.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/game.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/controls.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/sounds.js" charset="utf-8"></script>
+
+<img src="themes/suse/images/game_tiles.png" width="0" height="0"/>
+<img src="themes/suse/images/player_sprites.png" width="0" height="0"/>
+
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", function(event) { load_level() })</script>
+
+</body>
+</html>
